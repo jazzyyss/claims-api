@@ -1,5 +1,4 @@
-import express from "express";
-const app = express();
+import app from "./app.js";
 import {testDbConnection} from "./config/db.js";
 
 const PORT = process.env.PORT || 4000;
@@ -9,5 +8,5 @@ const PORT = process.env.PORT || 4000;
 
   app.listen(PORT, _ => {
     console.log(`Server running on port ${PORT}`);
-  })
-})()
+  });
+})();
